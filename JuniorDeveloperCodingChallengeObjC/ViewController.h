@@ -7,8 +7,15 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <Dropbox/Dropbox.h>
 
 @interface ViewController : UIViewController
+
+//- (IBAction)didPressLink;
+
+@property (nonatomic, retain) IBOutlet UIButton* linkButton;
+//@property (nonatomic, retain) UIViewController* photoViewController;
+
 
 
 @end

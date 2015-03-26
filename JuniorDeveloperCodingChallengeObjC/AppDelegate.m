@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import <Dropbox/Dropbox.h>
 
 @interface AppDelegate ()
 
@@ -15,8 +16,14 @@
 @implementation AppDelegate
 
 
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOption {
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    self.window.rootViewController = [storyboard instantiateInitialViewController];
+    DBAccountManager *accountManager = [[DBAccountManager alloc] initWithAppKey:@"23oge5c0g2ye988"
+                                                                     secret:@"x5rer660irpqup3"];
+    [DBAccountManager setSharedManager:accountManager];
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
@@ -41,5 +48,16 @@
 - (void)applicationWillTerminate:(UIApplication *)application {
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
+
+- (BOOL)application:(UIApplication *)app openURL:(NSURL *)url
+  sourceApplication:(NSString *)source annotation:(id)annotation {
+    DBAccount *account = [[DBAccountManager sharedManager] handleOpenURL:url];
+    if (account) {
+        NSLog(@"App linked successfully!");
+        return YES;
+    }
+    return NO;
+}
+
 
 @end
