@@ -13,7 +13,6 @@
 
 //- (IBAction)didPressLink;
 
-@property (nonatomic, retain) IBOutlet UIButton* linkButton;
 //@property (nonatomic, retain) UIViewController* photoViewController;
 
 

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FA0655481AC5D748005C6B41 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0655471AC5D748005C6B41 /* CameraViewController.m */; };
 		FA1A2DDA1AC3DB5900D4E2B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1A2DD91AC3DB5900D4E2B4 /* main.m */; };
 		FA1A2DDD1AC3DB5A00D4E2B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1A2DDC1AC3DB5A00D4E2B4 /* AppDelegate.m */; };
 		FA1A2DE01AC3DB5A00D4E2B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1A2DDF1AC3DB5A00D4E2B4 /* ViewController.m */; };
@@ -21,6 +22,9 @@
 		FA1A2E081AC4702C00D4E2B4 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1A2E071AC4702C00D4E2B4 /* SystemConfiguration.framework */; };
 		FA1A2E0A1AC4704200D4E2B4 /* libc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1A2E091AC4704200D4E2B4 /* libc++.dylib */; };
 		FA1A2E0C1AC4704D00D4E2B4 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = FA1A2E0B1AC4704D00D4E2B4 /* libz.dylib */; };
+		FAC8478D1AC4F0E10042FC20 /* DBSyncManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FAC8478C1AC4F0E10042FC20 /* DBSyncManager.m */; };
+		FAD8C7D51AC4A79B0085133F /* ImageCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD8C7D41AC4A79B0085133F /* ImageCollectionViewController.m */; };
+		FAD8C7DB1AC4A87E0085133F /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = FAD8C7DA1AC4A87E0085133F /* ImageCollectionViewCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FA0655461AC5D748005C6B41 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
+		FA0655471AC5D748005C6B41 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
 		FA1A2DD41AC3DB5800D4E2B4 /* JuniorDeveloperCodingChallengeObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuniorDeveloperCodingChallengeObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1A2DD81AC3DB5900D4E2B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA1A2DD91AC3DB5900D4E2B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -54,6 +60,12 @@
 		FA1A2E071AC4702C00D4E2B4 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		FA1A2E091AC4704200D4E2B4 /* libc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libc++.dylib"; path = "usr/lib/libc++.dylib"; sourceTree = SDKROOT; };
 		FA1A2E0B1AC4704D00D4E2B4 /* libz.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.dylib; path = usr/lib/libz.dylib; sourceTree = SDKROOT; };
+		FAC8478C1AC4F0E10042FC20 /* DBSyncManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DBSyncManager.m; sourceTree = "<group>"; };
+		FAC8478E1AC4F0FD0042FC20 /* DBSyncManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DBSyncManager.h; sourceTree = "<group>"; };
+		FAD8C7D31AC4A79B0085133F /* ImageCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewController.h; sourceTree = "<group>"; };
+		FAD8C7D41AC4A79B0085133F /* ImageCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewController.m; sourceTree = "<group>"; };
+		FAD8C7D91AC4A87E0085133F /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ImageCollectionViewCell.h; path = ../ImageCollectionViewCell.h; sourceTree = "<group>"; };
+		FAD8C7DA1AC4A87E0085133F /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ImageCollectionViewCell.m; path = ../ImageCollectionViewCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,11 +121,19 @@
 		FA1A2DD61AC3DB5800D4E2B4 /* JuniorDeveloperCodingChallengeObjC */ = {
 			isa = PBXGroup;
 			children = (
+				FAD8C7D91AC4A87E0085133F /* ImageCollectionViewCell.h */,
+				FAD8C7DA1AC4A87E0085133F /* ImageCollectionViewCell.m */,
 				FA1A2DDB1AC3DB5900D4E2B4 /* AppDelegate.h */,
 				FA1A2DDC1AC3DB5A00D4E2B4 /* AppDelegate.m */,
 				FA1A2DDE1AC3DB5A00D4E2B4 /* ViewController.h */,
 				FA1A2DDF1AC3DB5A00D4E2B4 /* ViewController.m */,
+				FAD8C7D31AC4A79B0085133F /* ImageCollectionViewController.h */,
+				FAD8C7D41AC4A79B0085133F /* ImageCollectionViewController.m */,
+				FAC8478C1AC4F0E10042FC20 /* DBSyncManager.m */,
+				FAC8478E1AC4F0FD0042FC20 /* DBSyncManager.h */,
 				FA1A2DE11AC3DB5A00D4E2B4 /* Main.storyboard */,
+				FA0655461AC5D748005C6B41 /* CameraViewController.h */,
+				FA0655471AC5D748005C6B41 /* CameraViewController.m */,
 				FA1A2DE41AC3DB5B00D4E2B4 /* Images.xcassets */,
 				FA1A2DE61AC3DB5C00D4E2B4 /* LaunchScreen.xib */,
 				FA1A2DD71AC3DB5800D4E2B4 /* Supporting Files */,
@@ -247,8 +267,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FAC8478D1AC4F0E10042FC20 /* DBSyncManager.m in Sources */,
+				FAD8C7D51AC4A79B0085133F /* ImageCollectionViewController.m in Sources */,
 				FA1A2DE01AC3DB5A00D4E2B4 /* ViewController.m in Sources */,
+				FAD8C7DB1AC4A87E0085133F /* ImageCollectionViewCell.m in Sources */,
 				FA1A2DDD1AC3DB5A00D4E2B4 /* AppDelegate.m in Sources */,
+				FA0655481AC5D748005C6B41 /* CameraViewController.m in Sources */,
 				FA1A2DDA1AC3DB5900D4E2B4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -450,6 +474,7 @@
 				FA1A2DF91AC3DB5D00D4E2B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		FA1A2DFA1AC3DB5D00D4E2B4 /* Build configuration list for PBXNativeTarget "JuniorDeveloperCodingChallengeObjCTests" */ = {
 			isa = XCConfigurationList;
@@ -458,6 +483,7 @@
 				FA1A2DFC1AC3DB5D00D4E2B4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

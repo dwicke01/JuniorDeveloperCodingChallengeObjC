@@ -20,8 +20,8 @@
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
     UIStoryboard *storyboard = [UIStoryboard storyboardWithName:@"Main" bundle:nil];
     self.window.rootViewController = [storyboard instantiateInitialViewController];
-    DBAccountManager *accountManager = [[DBAccountManager alloc] initWithAppKey:@"23oge5c0g2ye988"
-                                                                     secret:@"x5rer660irpqup3"];
+    DBAccountManager *accountManager = [[DBAccountManager alloc] initWithAppKey:@"u7vmxha8rgyp9q5"
+                                                                     secret:@"av78qv8sy3jriqz"];
     [DBAccountManager setSharedManager:accountManager];
     [self.window makeKeyAndVisible];
     return YES;
