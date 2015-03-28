@@ -98,7 +98,13 @@
 */
 
 
-
+- (void)sendImage:(UIImage*)image
+{
+    NSData *imageData = UIImageJPEGRepresentation(image, 0.6);
+    DBPath *newPath = [[DBPath root] childPath:[NSString stringWithFormat:@"image_%i.jpg", arc4random()]];
+    DBFile *file = [[DBFilesystem sharedFilesystem] createFile:newPath error:nil];
+    [file writeData:imageData error:nil];
+}
 
 
 

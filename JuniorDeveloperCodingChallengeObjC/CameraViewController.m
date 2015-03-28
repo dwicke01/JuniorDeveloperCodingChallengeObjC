@@ -15,6 +15,7 @@
 
 - (IBAction)takePhoto:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *uploadPhoto;
+- (IBAction)uploadPhoto:(id)sender;
 
 @end
 
@@ -48,9 +49,11 @@
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-    
     [picker dismissViewControllerAnimated:YES completion:NULL];
-    
 }
 
+- (IBAction)uploadPhoto:(id)sender {
+    [self.syncManager sendImage:self.imageView.image];
+    self.imageView.image = nil;
+}
 @end

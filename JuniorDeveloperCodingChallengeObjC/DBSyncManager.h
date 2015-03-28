@@ -16,6 +16,7 @@
 +(DBSyncManager*) getSharedInstance;
 +(BOOL) isAuthenticated;
 -(NSArray*) getImages;
+- (void) sendImage:(UIImage*)image;
 @end
 
 #endif

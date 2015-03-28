@@ -106,6 +106,9 @@
                                 <state key="normal" title="Upload Photo">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="uploadPhoto:" destination="llG-nC-gRF" eventType="touchUpInside" id="UOa-VB-zpb"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="391-FS-b5e">
                                 <rect key="frame" x="16" y="472" width="77" height="30"/>
