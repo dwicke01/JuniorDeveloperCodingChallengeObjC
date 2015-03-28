@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		FA0655481AC5D748005C6B41 /* CameraViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0655471AC5D748005C6B41 /* CameraViewController.m */; };
+		FA0656311AC6748E005C6B41 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA0656301AC6748E005C6B41 /* CoreLocation.framework */; };
+		FA0656341AC674B8005C6B41 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA0656331AC674B8005C6B41 /* MapViewController.m */; };
 		FA1A2DDA1AC3DB5900D4E2B4 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1A2DD91AC3DB5900D4E2B4 /* main.m */; };
 		FA1A2DDD1AC3DB5A00D4E2B4 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1A2DDC1AC3DB5A00D4E2B4 /* AppDelegate.m */; };
 		FA1A2DE01AC3DB5A00D4E2B4 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = FA1A2DDF1AC3DB5A00D4E2B4 /* ViewController.m */; };
@@ -40,6 +42,9 @@
 /* Begin PBXFileReference section */
 		FA0655461AC5D748005C6B41 /* CameraViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CameraViewController.h; sourceTree = "<group>"; };
 		FA0655471AC5D748005C6B41 /* CameraViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CameraViewController.m; sourceTree = "<group>"; };
+		FA0656301AC6748E005C6B41 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		FA0656321AC674B8005C6B41 /* MapViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		FA0656331AC674B8005C6B41 /* MapViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		FA1A2DD41AC3DB5800D4E2B4 /* JuniorDeveloperCodingChallengeObjC.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = JuniorDeveloperCodingChallengeObjC.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FA1A2DD81AC3DB5900D4E2B4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA1A2DD91AC3DB5900D4E2B4 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -73,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FA0656311AC6748E005C6B41 /* CoreLocation.framework in Frameworks */,
 				FA1A2E0C1AC4704D00D4E2B4 /* libz.dylib in Frameworks */,
 				FA1A2E0A1AC4704200D4E2B4 /* libc++.dylib in Frameworks */,
 				FA1A2E081AC4702C00D4E2B4 /* SystemConfiguration.framework in Frameworks */,
@@ -96,6 +102,7 @@
 		FA1A2DCB1AC3DB5700D4E2B4 = {
 			isa = PBXGroup;
 			children = (
+				FA0656301AC6748E005C6B41 /* CoreLocation.framework */,
 				FA1A2E0B1AC4704D00D4E2B4 /* libz.dylib */,
 				FA1A2E091AC4704200D4E2B4 /* libc++.dylib */,
 				FA1A2E071AC4702C00D4E2B4 /* SystemConfiguration.framework */,
@@ -134,6 +141,8 @@
 				FA1A2DE11AC3DB5A00D4E2B4 /* Main.storyboard */,
 				FA0655461AC5D748005C6B41 /* CameraViewController.h */,
 				FA0655471AC5D748005C6B41 /* CameraViewController.m */,
+				FA0656321AC674B8005C6B41 /* MapViewController.h */,
+				FA0656331AC674B8005C6B41 /* MapViewController.m */,
 				FA1A2DE41AC3DB5B00D4E2B4 /* Images.xcassets */,
 				FA1A2DE61AC3DB5C00D4E2B4 /* LaunchScreen.xib */,
 				FA1A2DD71AC3DB5800D4E2B4 /* Supporting Files */,
@@ -270,6 +279,7 @@
 				FAC8478D1AC4F0E10042FC20 /* DBSyncManager.m in Sources */,
 				FAD8C7D51AC4A79B0085133F /* ImageCollectionViewController.m in Sources */,
 				FA1A2DE01AC3DB5A00D4E2B4 /* ViewController.m in Sources */,
+				FA0656341AC674B8005C6B41 /* MapViewController.m in Sources */,
 				FAD8C7DB1AC4A87E0085133F /* ImageCollectionViewCell.m in Sources */,
 				FA1A2DDD1AC3DB5A00D4E2B4 /* AppDelegate.m in Sources */,
 				FA0655481AC5D748005C6B41 /* CameraViewController.m in Sources */,

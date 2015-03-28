@@ -9,14 +9,16 @@
 #ifndef JuniorDeveloperCodingChallengeObjC_DBSyncManager_h
 #define JuniorDeveloperCodingChallengeObjC_DBSyncManager_h
 
-#include <Dropbox/Dropbox.h>
+#import <Dropbox/Dropbox.h>
 
 @interface DBSyncManager : NSObject
 
 +(DBSyncManager*) getSharedInstance;
 +(BOOL) isAuthenticated;
 -(NSArray*) getImages;
-- (void) sendImage:(UIImage*)image;
+-(void) sendImage:(UIImage*)image;
+-(void)emptyNewlyUploadedImages;
+-(NSArray*)getNewlyUploadedImages;
 @end
 
 #endif

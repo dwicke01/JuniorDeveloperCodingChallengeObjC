@@ -16,7 +16,7 @@
 @interface DBSyncManager ()
 
 @property (strong, nonatomic) DBAccount *userDBAccount;
-
+@property NSMutableArray *newlyUploadedImages; // this array will contain uploaded images so they do not need to be redownloaded
 
 @end
 
@@ -104,11 +104,16 @@
     DBPath *newPath = [[DBPath root] childPath:[NSString stringWithFormat:@"image_%i.jpg", arc4random()]];
     DBFile *file = [[DBFilesystem sharedFilesystem] createFile:newPath error:nil];
     [file writeData:imageData error:nil];
+    [self.newlyUploadedImages addObject:image];
 }
 
+- (void)emptyNewlyUploadedImages {
+    [self.newlyUploadedImages removeAllObjects];
+}
 
-
-
+-(NSArray*)getNewlyUploadedImages {
+    return self.newlyUploadedImages;
+}
 
 
 

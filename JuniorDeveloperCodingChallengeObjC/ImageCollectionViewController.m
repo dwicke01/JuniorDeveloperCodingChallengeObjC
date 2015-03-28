@@ -14,6 +14,7 @@
 @interface ImageCollectionViewController() <UICollectionViewDataSource>
 
 @property NSArray *images;
+@property DBSyncManager *syncManager;
 
 @end
 
@@ -22,8 +23,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.collectionView setContentInset:UIEdgeInsetsMake(64, 0, 0, 0)];
-    self.images = [[DBSyncManager getSharedInstance] getImages];
     self.collectionView.dataSource = self;
+    self.syncManager = [DBSyncManager getSharedInstance];
+    self.images = [self.syncManager getImages];
 }
 
 -(void) didReceiveMemoryWarning {
@@ -51,4 +53,8 @@
     
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    self.images = [self.images arrayByAddingObjectsFromArray:[self.syncManager getNewlyUploadedImages]];
+    [self.syncManager emptyNewlyUploadedImages];
+}
 @end

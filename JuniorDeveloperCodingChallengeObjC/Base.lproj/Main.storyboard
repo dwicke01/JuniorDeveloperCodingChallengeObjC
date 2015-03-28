@@ -88,6 +88,30 @@
             </objects>
             <point key="canvasLocation" x="1388.2666666666667" y="137.26666666666665"/>
         </scene>
+        <!--Map-->
+        <scene sceneID="dxb-Go-eIF">
+            <objects>
+                <viewController id="zj2-Hs-8ws" customClass="MapViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LSV-nd-lRd">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" id="NDH-mO-NDM">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Map" id="yw7-Pk-v6L"/>
+                    <connections>
+                        <outlet property="mapView" destination="NDH-mO-NDM" id="ML6-42-0RW"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BMU-ZE-lWy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="647" y="1416"/>
+        </scene>
         <!--Camera-->
         <scene sceneID="rCk-jG-IHp">
             <objects>
@@ -96,28 +120,28 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="O3a-xo-Ugp">
-                                <rect key="frame" x="0.0" y="64" width="320" height="400"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="v1v-11-ChK">
-                                <rect key="frame" x="113" y="472" width="95" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Upload Photo">
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
-                                </state>
-                                <connections>
-                                    <action selector="uploadPhoto:" destination="llG-nC-gRF" eventType="touchUpInside" id="UOa-VB-zpb"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="391-FS-b5e">
-                                <rect key="frame" x="16" y="472" width="77" height="30"/>
+                                <rect key="frame" x="16" y="493" width="77" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Take Photo">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
                                     <action selector="takePhoto:" destination="llG-nC-gRF" eventType="touchUpInside" id="hs2-Ix-5Gd"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="O3a-xo-Ugp">
+                                <rect key="frame" x="0.0" y="64" width="320" height="431"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="v1v-11-ChK">
+                                <rect key="frame" x="113" y="493" width="95" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Upload Photo">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadPhoto:" destination="llG-nC-gRF" eventType="touchUpInside" id="UOa-VB-zpb"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -147,6 +171,7 @@
                     <connections>
                         <segue destination="llG-nC-gRF" kind="relationship" relationship="viewControllers" id="Qyh-nl-QAU"/>
                         <segue destination="YPc-qE-yuK" kind="relationship" relationship="viewControllers" id="kRn-cO-ZmN"/>
+                        <segue destination="zj2-Hs-8ws" kind="relationship" relationship="viewControllers" id="hYI-66-Ldb"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Bfe-kL-p5x" userLabel="First Responder" sceneMemberID="firstResponder"/>
